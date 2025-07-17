@@ -5,7 +5,7 @@ import emailRouter from "./routes/email.js";
 
 dotenv.config();
 
-const { PORT = 3001 } = process.env;
+const PORT = process.env.PORT || 3001;
 
 const app = express();
 
